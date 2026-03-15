@@ -12,33 +12,33 @@ const WhyChoose: React.FC = () => {
   ];
 
   return (
-    <section className="py-20 bg-emerald-900 text-white">
+    <section className="py-20 bg-[#99967C] text-white">
        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
            
            <div>
-             <h2 className="text-3xl md:text-4xl font-bold mb-6">
-               Por que escolher meu atendimento em Penápolis?
+             <h2 className="text-3xl text-black md:text-4xl font-bold mb-6">
+               Por que escolher meu atendimento?
              </h2>
-             <p className="text-emerald-100 text-lg mb-8">
+             <p className="text-black text-lg mb-8">
                A nutrição vai muito além de contar calorias. Ofereço um suporte completo para que você atinja seus objetivos com segurança e tranquilidade.
              </p>
              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                {benefits.map((benefit, index) => (
                  <div key={index} className="flex items-start gap-3">
-                   <CheckCircle className="w-6 h-6 text-emerald-400 shrink-0 mt-0.5" />
-                   <span className="text-emerald-50">{benefit}</span>
+                   <CheckCircle className="w-6 h-6 text-white shrink-0 mt-0.5" />
+                   <span className="text-black">{benefit}</span>
                  </div>
                ))}
              </div>
            </div>
 
-           <div className="relative h-64 lg:h-full min-h-[300px] bg-emerald-800/30 rounded-2xl p-8 flex items-center justify-center border border-emerald-700">
+           <div className="relative h-64 lg:h-full min-h-[300px] bg-white/30 rounded-2xl p-8 flex items-center justify-center border border-black">
               <div className="text-center">
-                <p className="text-2xl font-serif italic text-emerald-200 mb-4">
+                <p className="text-2xl font-serif italic text-black mb-4">
                   "Que seu remédio seja seu alimento, e que seu alimento seja seu remédio."
                 </p>
-                <p className="text-sm uppercase tracking-widest text-emerald-400">— Hipócrates</p>
+                <p className="text-sm uppercase tracking-widest text-black">— Hipócrates</p>
               </div>
            </div>
 

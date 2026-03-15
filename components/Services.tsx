@@ -15,7 +15,7 @@ const Services: React.FC = () => {
     },
     {
       icon: <Stethoscope className="w-8 h-8 text-emerald-600" />,
-      title: "Nutrição Clínica",
+      title: "Nutrição Esportiva e Estética",
       description: "Manejo nutricional para controle de diabetes, hipertensão, colesterol alto e outras condições de saúde."
     },
     {
@@ -31,12 +31,12 @@ const Services: React.FC = () => {
   ];
 
   return (
-    <section id="servicos" className="py-20 bg-white">
+    <section id="servicos" className="py-20 bg-[#99967C]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <span className="text-emerald-600 font-semibold uppercase tracking-wider text-sm">O que ofereço</span>
+          <span className="text-Black font-semibold uppercase tracking-wider text-sm">O que ofereço</span>
           <h2 className="text-3xl md:text-4xl font-bold text-stone-800 mt-2">Áreas de Atuação</h2>
-          <div className="w-20 h-1 bg-emerald-500 mx-auto mt-4 rounded-full"></div>
+          <div className="w-20 h-1 bg-white mx-auto mt-4 rounded-full"></div>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">

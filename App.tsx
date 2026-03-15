@@ -20,8 +20,8 @@ const App: React.FC = () => {
         <Services />
         <About />
         <WhyChoose />
-        <CtaSection />
         <Location />
+        <CtaSection />
       </main>
       <Footer />
       <FloatingWhatsapp />

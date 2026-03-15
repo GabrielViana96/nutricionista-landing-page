@@ -15,7 +15,7 @@ const CtaSection: React.FC = () => {
           href="https://wa.me/5518999999999"
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-flex items-center gap-3 bg-emerald-600 text-white px-8 py-4 rounded-full text-xl font-medium hover:bg-emerald-700 transition-all shadow-xl hover:shadow-2xl hover:-translate-y-1"
+          className="inline-flex items-center gap-3 bg-[#99967c] text-white px-8 py-4 rounded-full text-xl font-medium hover:bg-emerald-700 transition-all shadow-xl hover:shadow-2xl hover:-translate-y-1"
         >
           <MessageCircle size={24} />
           Agendar consulta pelo WhatsApp

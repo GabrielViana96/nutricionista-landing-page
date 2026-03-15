@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import { Menu, X, Leaf } from 'lucide-react';
+import { link } from 'fs';
+
 
 const Header: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -8,7 +10,7 @@ const Header: React.FC = () => {
     { name: 'Início', href: '#home' },
     { name: 'Sobre', href: '#sobre' },
     { name: 'Serviços', href: '#servicos' },
-    { name: 'Localização', href: '#localizacao' },
+    { name: 'Planos', href: '#planos' },
   ];
 
   const handleScroll = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
@@ -29,23 +31,28 @@ const Header: React.FC = () => {
   };
 
   return (
-    <header className="fixed w-full bg-white/95 backdrop-blur-sm shadow-sm z-50 transition-all duration-300">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <header  className="fixed w-full bg-white/95 backdrop-blur-sm shadow-sm z-50 transition-all duration-300">
+      <div  className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-20">
           
           {/* Logo */}
           <div className="flex items-center gap-2">
-            <div className="bg-emerald-100 p-2 rounded-full">
-              <Leaf className="h-6 w-6 text-emerald-600" />
+            <div className="bg-[#99967c] p-1 rounded-full ">
+              
+              <img className="h-8 w-8 text-emerald-600 rounded-full  " 
+                src="../img/logo_e_nome.jpeg" 
+               alt="Logo Etiene" 
+               
+              />
             </div>
             <div>
-              <h1 className="text-xl font-semibold text-stone-800 leading-tight">Dra. Modelo Silva</h1>
-              <p className="text-xs text-stone-500 uppercase tracking-wider">Nutricionista Clínica</p>
+              <h1 className="text-xl font-semibold text-stone-800 leading-tight">Etiene Hammacher</h1>
+              <p className="text-xs text-stone-500 uppercase tracking-wider">Nutricionista </p>
             </div>
           </div>
 
           {/* Desktop Nav */}
-          <nav className="hidden md:flex items-center space-x-8">
+          <nav  className="hidden md:flex items-center space-x-8">
             {navLinks.map((link) => (
               <a
                 key={link.name}
@@ -60,7 +67,7 @@ const Header: React.FC = () => {
               href="https://wa.me/5518999999999" 
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-emerald-600 text-white px-6 py-2.5 rounded-full text-sm font-medium hover:bg-emerald-700 transition-colors shadow-md hover:shadow-lg uppercase tracking-wide"
+              className="bg-[#99967c] text-white px-6 py-2.5 rounded-full text-sm font-medium hover:bg-emerald-700 transition-colors shadow-md hover:shadow-lg uppercase tracking-wide"
             >
               Agendar Consulta
             </a>
@@ -96,7 +103,7 @@ const Header: React.FC = () => {
                 href="https://wa.me/5518999999999"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="block w-full text-center mt-6 bg-emerald-600 text-white px-3 py-4 rounded-md text-base font-medium hover:bg-emerald-700 uppercase tracking-wide shadow-md"
+                className="block w-full text-center mt-6 bg-[#99967c] text-white px-3 py-4 rounded-md text-base font-medium hover:bg-emerald-700 uppercase tracking-wide shadow-md"
               >
                 Agendar pelo WhatsApp
               </a>

@@ -21,8 +21,8 @@ const Hero: React.FC = () => {
     <section id="home" className="relative pt-20 lg:pt-0 min-h-[90vh] flex items-center bg-stone-50">
       {/* Background Image with Overlay */}
       <div className="absolute inset-0 z-0">
-        <img
-          src="https://picsum.photos/id/431/1920/1080" 
+        <img center
+          src="../img/teste2.jpeg" 
           alt="Alimentação saudável e equilíbrio"
           className="w-full h-full object-cover"
         />
@@ -32,10 +32,10 @@ const Hero: React.FC = () => {
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
         <div className="max-w-2xl">
           <span className="inline-block py-1 px-3 rounded-full bg-emerald-100 text-emerald-800 text-sm font-semibold mb-6 tracking-wide">
-            Atendimento em Penápolis - SP
+            Atendimento em Novo Hamburgo - RS
           </span>
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white lg:text-stone-800 leading-tight mb-6">
-            Nutrição personalizada para mais <span className="text-emerald-500 lg:text-emerald-600">saúde e equilíbrio</span>
+            Nutrição personalizada para mais <span className="text-emerald-500 lg:text-[#99967c]">saúde e equilíbrio</span>
           </h1>
           <p className="text-lg md:text-xl text-stone-200 lg:text-stone-600 mb-8 leading-relaxed">
             Acompanhamento nutricional individualizado, com foco em resultados reais, sustentáveis e sem radicalismos. Redescubra o prazer de comer bem.
@@ -45,7 +45,7 @@ const Hero: React.FC = () => {
               href="https://wa.me/5518999999999"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center justify-center gap-2 bg-emerald-600 text-white px-8 py-4 rounded-full text-lg font-medium hover:bg-emerald-700 transition-all shadow-lg hover:shadow-xl transform hover:-translate-y-1"
+              className="flex items-center justify-center gap-2 bg-[#99967c] text-white px-8 py-4 rounded-full text-lg font-medium hover:bg-emerald-700 transition-all shadow-lg hover:shadow-xl transform hover:-translate-y-1"
             >
               Agendar consulta
               <ArrowRight size={20} />
@@ -53,7 +53,7 @@ const Hero: React.FC = () => {
             <a
               href="#sobre"
               onClick={(e) => handleScroll(e, '#sobre')}
-              className="flex items-center justify-center px-8 py-4 rounded-full text-lg font-medium border-2 border-white lg:border-emerald-600 text-white lg:text-emerald-600 hover:bg-white/10 lg:hover:bg-emerald-50 transition-colors cursor-pointer"
+              className="flex items-center justify-center px-8 py-4 rounded-full text-lg font-medium border-2 border-white lg:border-[#99967c] text-white lg:text-[#99967c] hover:bg-white/10 lg:hover:bg-emerald-50 transition-colors cursor-pointer"
             >
               Saiba mais
             </a>
