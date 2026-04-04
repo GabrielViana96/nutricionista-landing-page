@@ -1,14 +1,14 @@
 import React from 'react';
-import Header from './components/Header';
-import Hero from './components/Hero';
-import LocalFocus from './components/LocalFocus';
-import Services from './components/Services';
-import About from './components/About';
-import WhyChoose from './components/WhyChoose';
-import CtaSection from './components/CtaSection';
-import Location from './components/Location';
-import Footer from './components/Footer';
-import FloatingWhatsapp from './components/FloatingWhatsapp';
+import Header from './src/Components/Header';
+import Hero from './src/Components/Hero';
+import LocalFocus from './src/Components/LocalFocus';
+import Services from './src/Components/Services';
+import About from './src/Components/About';
+import WhyChoose from './src/Components/WhyChoose';
+import CtaSection from './src/Components/CtaSection';
+import Location from './src/Components/Location';
+import Footer from './src/Components/Footer';
+import FloatingWhatsapp from './src/Components/FloatingWhatsapp';
 
 const App: React.FC = () => {
   return (
