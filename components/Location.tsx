@@ -1,25 +1,25 @@
 import React from 'react';
 import { MapPin, Clock, Phone } from 'lucide-react';
-import { Apple, Scale, Stethoscope, HeartPulse, UserCheck } from 'lucide-react';
+import { Apple, CalendarPlus, Stethoscope, CalendarCheck,Users, UserCheck } from 'lucide-react';
 const Location: React.FC = () => {
   const services = [
     {
-      icon: <Apple className="w-8 h-8 text-emerald-600" />,
+      icon: <UserCheck  className="w-8 h-8 text-emerald-600" />,
       title: "Individual",
       description: "1° consulta + retorno em 30 dias"
     },
     {
-      icon: <Scale className="w-8 h-8 text-emerald-600" />,
+      icon: <CalendarCheck  className="w-8 h-8 text-emerald-600" />,
       title: "Trimestral",
       description: "2 Consultas + 1 retorno"
     },
     {
-      icon: <Stethoscope className="w-8 h-8 text-emerald-600" />,
+      icon: <CalendarPlus className="w-8 h-8 text-emerald-600" />,
       title: "Semestral",
       description: "3 Consultas + 2 retorno"
     },
     {
-      icon: <HeartPulse className="w-8 h-8 text-emerald-600" />,
+      icon: <Users className="w-8 h-8 text-emerald-600" />,
       title: "Dupla",
       description: "Para fazer junto. Valor por pessoa"
     },
@@ -39,7 +39,7 @@ const Location: React.FC = () => {
           {services.map((service, index) => (
             <div 
               key={index} 
-              className="  group p-8 bg-stone-50 rounded-2xl hover:bg-[#ACA69D] hover:shadow-xl transition-all duration-300 border border-transparent hover:border-emerald-100"
+              className="  group p-8 bg-stone-50 rounded-2xl hover:bg-[#99967C] hover:shadow-xl transition-all duration-300 border border-transparent hover:border-emerald-100"
             >
               <div className=" p-4 rounded-xl inline-block shadow-sm group-hover:bg-emerald-50 transition-colors mb-6">
                 {service.icon}

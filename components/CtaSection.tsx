@@ -12,7 +12,7 @@ const CtaSection: React.FC = () => {
           Dê o primeiro passo para uma vida mais leve e saudável. Entre em contato para tirar dúvidas ou agendar sua consulta presencial em Penápolis.
         </p>
         <a
-          href="https://wa.me/5518999999999"
+          href="https://wa.me/551999801656"
           target="_blank"
           rel="noopener noreferrer"
           className="inline-flex items-center gap-3 bg-[#99967c] text-white px-8 py-4 rounded-full text-xl font-medium hover:bg-emerald-700 transition-all shadow-xl hover:shadow-2xl hover:-translate-y-1"
